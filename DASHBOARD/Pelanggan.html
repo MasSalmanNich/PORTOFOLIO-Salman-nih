@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Pelanggan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <h2>Pelanggan</h2>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="penjualan.html">Penjualan</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="pelanggan.html">Pelanggan</a></li>
+          <li><a href="laporan.html">Laporan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Konten Utama -->
+      <div class="content">
+        <header>
+          <h1>Daftar Pelanggan Tetap</h1>
+        </header>
+
+        <div class="customer-table">
+          <table id="customerTable">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Pelanggan</th>
+                <th>Email</th>
+                <th>Nomor Telepon</th>
+              </tr>
+            </thead>
+            <tbody id="customerTableBody">
+              <!-- Data pelanggan akan dimuat dengan JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="pelanggan.js"></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+/* Wrapper untuk Sidebar dan Konten */
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #127dc4;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background-color transform 0.3s ease;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar ul li a:hover {
+  background-color: #1d193f;
+}
+
+.sidebar.closed {
+  transition: translateX(-100%);
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  z-index: 10;
+  padding: 10px;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Konten Utama */
+.content {
+  margin-left: 250px;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Tombol Ikon */
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s, transform 0.5s ease;
+}
+
+/* Efek hover: warna berubah dan ikon naik */
+.icon-btn:hover {
+  color: #1abc9c;
+  transform: translateY(-5px); /* Perbaikan: gunakan transform */
+}
+
+/* Efek saat tombol ditekan */
+.icon-btn:active {
+  transform: translateY(0); /* Perbaikan: gunakan transform */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Jarak antar elemen */
+}
+
+/* Gaya teks profil */
+.profile-text {
+  font-size: 13px;
+  color: #333;
+  font-weight: 400;
+}
+
+/* Mengatur bagian profil */
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .login-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-right .profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: translateY(-5px);
+}
+
+.profile-img:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(43, 62, 165, 0.1);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  position: relative;
+  width: 50%;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 40px 12px 12px; /* Spasi kiri untuk ikon */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+}
+
+.search-container .fa-search {
+  position: absolute;
+  right: 12px; /* Atur ke kiri jika ingin ikon di kiri */
+  top: 30%;
+  transform: translateY(-50%);
+  color: #aaa;
+  cursor: pointer;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Table dan Chart Container */
+.chart,
+.table-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+
+.table-container table,
+.chart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td,
+.chart th,
+.chart td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-container th,
+.chart th {
+  background-color: #4caf50;
+  color: black;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%; /* Gambar menyesuaikan lebar box */
+  height: 200px; /* Tinggi tetap */
+  object-fit: cover; /* Menjaga proporsi gambar tanpa terdistorsi */
+  border-radius: 8px;
+}
+
+/* Finance Summary */
+.finance-summary {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.finance-summary p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Tabel Pelanggan */
+.customer-table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.customer-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.customer-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.customer-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 200px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
