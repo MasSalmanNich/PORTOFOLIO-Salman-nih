@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Karyawan</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <!-- Sidebar -->
+<div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="#dashboard"><box-icon type='solid' name='dashboard'></box-icon> Dashboard</a></li>
+        <li><a href="#karyawan"><box-icon type='solid' name='user'></box-icon> Data Karyawan</a></li>
+        <li><a href="#divisi"><box-icon type='solid' name='group'></box-icon> Divisi</a></li>
+        <li><a href="#jabatan"><box-icon type='solid' name='briefcase'></box-icon> Jabatan</a></li>
+        <li><a href="#pengaturan"><box-icon type='solid' name='cog'></box-icon> Pengaturan</a></li>
+    </ul>
+</div>
+
+      <div class="dashboard">
+        <h1>Dashboard Karyawan</h1>
+        <div class="stats">
+          <div class="card">
+            <h3>Total Karyawan</h3>
+            <p id="total-karyawan">0</p>
+          </div>
+          <div class="card">
+            <h3>Jumlah Jabatan</h3>
+            <p id="jumlah-jabatan">0</p>
+          </div>
+          <div class="card">
+            <h3>Jumlah Divisi</h3>
+            <p id="jumlah-divisi">0</p>
+          </div>
+        </div>
+        <div class="karyawan-list">
+          <h2>Data Karyawan</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Jabatan</th>
+                <th>Divisi</th>
+                <th>Tanggal Masuk</th>
+              </tr>
+            </thead>
+            <tbody id="karyawan-data">
+              <!-- Data karyawan akan dimuat di sini -->
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Halaman Divisi -->
+        <section id="divisi" class="page">
+            <h2>Divisi</h2>
+            <div class="divisi-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Divisi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Keuangan</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HRD</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pemasaran</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Teknik</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>IT</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Divisi Lainnya</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="deskripsi-table">
+                <thead>
+                    <tr>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Divisi yang bertanggung jawab atas keuangan perusahaan, termasuk pengelolaan anggaran dan laporan keuangan.</td>
+                    </tr>
+                    <tr>
+                        <td>Divisi HRD mengelola sumber daya manusia dan memastikan kesejahteraan karyawan.</td>
+                    </tr>
+                    <tr>
+                        <td>Divisi pemasaran bertugas untuk mempromosikan produk dan meningkatkan penjualan.</td>
+                    </tr>
+                    <tr>
+                        <td>Divisi teknik bertanggung jawab untuk pengembangan dan pemeliharaan sistem teknologi.</td>
+                    </tr>
+                    <tr>
+                        <td>Divisi IT mengelola infrastruktur teknologi informasi dan dukungan teknis.</td>
+                    </tr>
+                    <tr>
+                        <td>Divisi lain yang mungkin meliputi berbagai kegiatan tambahan sesuai kebutuhan perusahaan.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <!-- Tambahkan konten terkait divisi di sini -->
+        </section>
+    
+        <!-- Halaman Jabatan -->
+        <section id="jabatan" class="page">
+            <h2>Jabatan</h2>
+            <p>Ini adalah halaman Jabatan.</p>
+            <!-- Tambahkan konten terkait jabatan di sini -->
+        </section>
+    
+        <!-- Halaman Pengaturan -->
+        <section id="pengaturan" class="page">
+            <h2>Pengaturan</h2>
+            <p>Ini adalah halaman Pengaturan.</p>
+            <!-- Tambahkan pengaturan dan preferensi di sini -->
+        </section>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

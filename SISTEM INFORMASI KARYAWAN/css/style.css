@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f9;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  position: relative; /* Change from fixed to relative */
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f4f6f9;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #555;
+  padding-left: 10px;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 270px; /* Menambah jarak agar tidak dempet */
+  padding: 20px;
+  width: calc(100% - 270px);
+}
+
+.dashboard {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 10px o;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    /* Bayangan pertama, lebih dekat */ 0 8px 16px rgba(0, 0, 0, 0.15),
+    /* Bayangan kedua, lebih jauh */ 0 12px 24px rgba(0, 0, 0, 0.1); /* Bayangan ketiga, paling jauh */
+  transition: transform 0.3s box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10ps) scale(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.2),
+    0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+  color: #555;
+}
+
+.card p {
+  font-size: 24px;
+  margin: 10px 0 0;
+  color: #333;
+}
+
+.karyawan-list {
+  background-color: #33ada3;
+  padding: 30px; /* Menambah padding untuk memberikan ruang */
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.karyawan-list h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.divisi-container {
+  display: flex; /* Menggunakan flexbox untuk mengatur tabel dalam satu baris */
+  justify-content: space-between; /* Memberikan jarak antara tabel */
+  margin-top: 20px; /* Jarak di atas tabel */
+}
+
+.divisi-table,
+.deskripsi-table {
+  width: 48%; /* Mengatur lebar tabel agar tidak saling tumpang tindih */
+  border-collapse: collapse; /* Menghapus jarak antara border */
+  margin-right: 20px; /* Menambahkan jarak antara tabel */
+}
+
+.deskripsi-table {
+  margin-right: 0; /* Menghapus margin kanan untuk tabel deskripsi */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: rgb(21, 111, 128);
+  color: white;
+}
+
+/* Hanya tampilkan halaman yang aktif */
