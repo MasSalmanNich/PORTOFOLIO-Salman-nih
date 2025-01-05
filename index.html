@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portfolio</title>
+  <link href="logo.png" rel="icon" />
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- Font Awesome CSS -->
@@ -45,6 +46,10 @@
     <div class="container">
       <h1>Welcome to My Portofolio</h1>
       <p>Enjoy your experience</p>
+      <div class="text-center">
+        <a href="#">
+        <button type="submit" class="btn btn-primary">CV</button></a>
+      </div>
     </div>
   </section>
 
@@ -74,7 +79,14 @@
       </div>
       <div class="col-md-6">
         <h2 class="about-title">RAIHAN SALMAN AL PARISY</h2>
-        <p class="about-description">Hi, saya Raihan Salman Al Parisy, saya adalah mahasiswa Universitas Pamulang semester 5. Hobi saya berolahraga dan saya suka dengan hal-hal menantang.</p>
+        <p class="about-description">Hi, saya Raihan Salman Al Parisy, saya adalah mahasiswa Universitas Pamulang semester 5. Hobi saya berolahraga dan saya suka dengan hal-hal menantang. </p>
+        <p class="about-description"> Saya termasuk orang yang pemalu jika belum kenal tapi saya mampu berbicara di depan banyak orang sayapun mampu bekerjasama dalam tim agar mencapai tujuan yang sama , saya mampu menghendel apapun
+          masalah dan saya dapat membedakan masalah pribadi dan masalah pekerjaan akan saya jamin
+          tidak akan mempengaruhi kinerja saya, saya sangat suka mencoba hal baru apalagi hal yang
+          belum pernah saya coba sama sekali dan saya mampu mempelajari sesuatu hingga saya bisa, saya
+          jujur dan sayapun amanah dalam suatu urusan. saya moodyan tapi saya juga mampu menahan
+          amarah, saya mengakui jika yang saya lakukan salah namun saya akan membantah jika yang saya
+          lakukan benar.</p>
       </div>
     </div>
   </div>
@@ -99,29 +111,72 @@
           <p>membuat tampilan kalkulator sederhana.</p>
         </div>
         <div class="col-md-4 portfolio-item text-center">
-          <a href="DASHBOARD/index.html" target = "_blank">
+          <a href="DASHBOARD/index.html " target="_blank">
           <img src="dashboard.png" alt="Project 3" class="img-fluid"></a>
           <h5 class="mt-2">Project 3</h5>
-          <p>Membuat dashboard E-commerces sederhana.</p>
+          <p>dashboard E-comemers.</p>
+        </div>
+        <div class="col-md-4 portfolio-item text-center">
+          <a href="ChartJS-main/index.html " target="_blank">
+          <img src="Grafik Karyawan.png" alt="Project 3" class="img-fluid"></a>
+          <h5 class="mt-2">Project 4</h5>
+          <p>Membuat Grafik Karyawan.</p>
+        </div>
+        <div class="col-md-4 portfolio-item text-center">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#tetrisModal">
+            <img src="Tetris.png" alt="Tetris Game" class="img-fluid">
+            <h5 class="mt-2">Project 5</h5>
+            <p>Game klasik Tetris yang saya buat menggunakan JavaScript.</p>
+          </a>
+        </div>
+        <div class="col-md-4 portfolio-item text-center">
+          <a href="SISTEM INFORMASI KARYAWAN/index.html" target="_blank">
+          <img src="SIS  dasboard.png" alt="Project 3" class="img-fluid"></a>
+          <h5 class="mt-2">Project 6</h5>
+          <p>Membuat Dashboard Karyawan.</p>
         </div>
         <div class="col-md-4 portfolio-item text-center">
           <img src="sertifikat.jpeg" alt="Project 4" class="img-fluid">
-          <h5 class="mt-2">Project 4</h5>
+          <h5 class="mt-2">Project 7</h5>
           <p>Sertifikat HTML.</p>
         </div>
         <div class="col-md-4 portfolio-item text-center">
-          <img src="sertifikat 2.jpg" alt="Project 5" class="img-fluid">
-          <h5 class="mt-2">Project 5</h5>
+          <img src="sertifikat CSS.jpg" alt="Project 5" class="img-fluid">
+          <h5 class="mt-2">Project 8</h5>
           <p>Sertifikat CSS.</p>
         </div>
         <div class="col-md-4 portfolio-item text-center">
-          <img src="sertifikat 3.jpg" alt="Project 6" class="img-fluid">
-          <h5 class="mt-2">Project 6</h5>
-          <p>sertifikat introduce JavaScript.</p>
+          <img src="sertifikat java.png" alt="Project 6" class="img-fluid">
+          <h5 class="mt-2">Project 9</h5>
+          <p>Shertifikat Introduction JAVASCRIPT.</p>
+        </div>
+        <div class="col-md-4 portfolio-item text-center">
+          <img src="sertifikat intermediete.jpg" alt="Project 6" class="img-fluid">
+          <h5 class="mt-2">Project 10</h5>
+          <p>Sertifikat intermediete JAVASCRIPT.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Modal untuk Tetris Game -->
+  <div class="modal fade" id="tetrisModal" tabindex="-1" aria-labelledby="tetrisModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tetrisModalLabel">Tetris Game</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <canvas id="gameCanvas" width="300" height="600"></canvas>
+          <div class="info mt-3">
+            <p>Score: <span id="score">0</span></p>
+            <button id="restartButton" class="btn btn-primary mt-2">Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Contact Section -->
   <section id="contact" class="py-5">
@@ -164,5 +219,7 @@
 
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="tetris/tetris.js"></script>
 </body>
 </html>
+
