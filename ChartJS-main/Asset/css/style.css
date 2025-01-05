@@ -1,0 +1,51 @@
+html {
+  background-color: #f0bb78;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+th {
+  background: #f0bb78;
+  color: fff0dc;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #eaeaea;
+}
+
+canvas {
+  margin: 20px auto;
+  display: block;
+  background: #fff0dc;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
